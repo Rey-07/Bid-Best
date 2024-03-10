@@ -37,7 +37,7 @@ next();
 
 } catch (err) {
     console.log(`error token verification`);
-    res.status(401).send('Unorthorised: No token provided');
+    res.status(401).send('unauthorised: No token provided');
 }
 
 

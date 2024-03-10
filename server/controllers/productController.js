@@ -28,7 +28,7 @@ req.rootUser = rootUser;
 req.userID = rootUser._id;
 } catch (err) {
     console.log(`error token verification`);
-    res.status(401).send('Unorthorised: No token provided');
+    res.status(401).send('unauthorised: No token provided');
 }
 
 let images = [];
@@ -209,7 +209,7 @@ exports.getMyProducts = catchAsyncErrors(async (req,res) => {
     req.userID = rootUser._id;
     } catch (err) {
         console.log(`error token verification`);
-        res.status(401).send('Unorthorised: No token provided');
+        res.status(401).send('unauthorised: No token provided');
     }
 
 
@@ -247,7 +247,7 @@ exports.getMyProducts = catchAsyncErrors(async (req,res) => {
         req.userID = rootUser._id;
         } catch (err) {
             console.log(`error token verification`);
-            res.status(401).send('Unorthorised: No token provided');
+            res.status(401).send('unauthorised: No token provided');
         }
     
     
@@ -357,7 +357,7 @@ req.rootUser = rootUser;
 req.userID = rootUser._id;
 } catch (err) {
     console.log(`error token verification`);
-    res.status(401).send('Unorthorised: No token provided');
+    res.status(401).send('unauthorised: No token provided');
 }
 
 
