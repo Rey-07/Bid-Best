@@ -9,15 +9,14 @@ import MetaData from "../MetaData/MetaData";
 
 const Profile = () => {
   // HERE USE HISTORY -> AT MIDDLEWARE PAGE -> IF NOT LOGIN -> REDIRECT TO LOGIN PAGE
-  console.log("profile page called");
   const history = useHistory();
 
   /*USESTATE FOR -> RECIVE AN USER OBJECT AS "DATA" -> ASSIGN DYNAMICALLY TO THAT -> AFTER THAT TO CHANGE VALUE USE STATE USE*/
   const [userData, setUserData] = useState({});
 
-  const [name, setName] = useState({});
-  const [email, setEmail] = useState({});
-  const [phone, setPhone] = useState({});
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   const [oldPassword, setOldPassword] = useState({});
   const [newPassword, setNewPassword] = useState({});
@@ -25,6 +24,7 @@ const Profile = () => {
 
   const callProfilePage = async () => {
     try {
+
       const res = await fetch("/getdata", {
         method: "GET",
         headers: {
@@ -33,6 +33,8 @@ const Profile = () => {
         },
         credentials: "include",
       });
+      console.log("step 2 done");
+      console.log(res);
       const data = await res.json();
       console.log(data);
       setUserData(data);
@@ -197,7 +199,7 @@ const Profile = () => {
                               Full Name
                             </div>
                             <div className="col-lg-9 col-md-8">
-                              {userData.name}
+                              {/* {userData.name} */} Shrey
                             </div>
                           </div>
 

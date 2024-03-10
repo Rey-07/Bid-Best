@@ -8,7 +8,7 @@ require("../db/conn");
 const User = require("../model/userSchema");
 
 router.get("/", (req, res) => {
-  res.send(`Router js is called`);
+  res.send.json({message:"Router js is called"});
 });
 
 router.post("/register", async (req, res) => {
@@ -174,7 +174,7 @@ router.post("/contact", authenticate, async (req, res) => {
     const { name, email, subject, message } = req.body;
 
     if (!name || !email || !subject || !message) {
-      console.log("Error in ciontact form at server side");
+      console.log("Error in contact form at server side");
       return res.json({ error: "All Feilds must be filled" });
     }
 
