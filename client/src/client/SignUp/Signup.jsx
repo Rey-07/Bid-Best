@@ -287,7 +287,7 @@ const Signup = () => {
                 <div className="panel right-panel">
                   <div className="content">
                     <h3>Already have an account?</h3>
-                    <p>Log in first to start with bestbid!!</p>
+                    <p>Log in first to start with BidBlitz!!</p>
                     <NavLink excat className="nav-link-signin" to="/signin">
                       <button
                         className="btn transparent"

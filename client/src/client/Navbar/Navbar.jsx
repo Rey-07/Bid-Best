@@ -219,7 +219,7 @@ const Navbar = () => {
               <div className="container-fluid">
                 <NavLink className="navbar-logo" to="/">
                   <RiAuctionFill />
-                  BestBid
+                  BidBlitz
                 </NavLink>
 
                 <button

@@ -548,7 +548,7 @@ MdOutlinePayment/> <span>Connect with Stripe </span></button>
 
                  <div className="row">
                  <div className="alert alert-primary" role="alert">
-  <MdVerified/>  Seller is Verfied by BestBid
+  <MdVerified/>  Seller is Verfied by BidBlitz
 </div>
                  </div>
 

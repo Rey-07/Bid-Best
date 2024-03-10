@@ -33,7 +33,7 @@ const Service = () => {
                     Team BidBlitz, comes up with a idea to provide a platform
                     for the sellers who want to sell thier product via bidding
                     and want to get the best price. Our team verifies all the
-                    users. Team bestbid tries to make this platform 100% secure
+                    users. Team BidBlitz tries to make this platform 100% secure
                     and safe.
                   </h2>
                 </div>
@@ -75,7 +75,7 @@ const Service = () => {
                   <h2 className="my-3">
                     Auction in the physical mode is little difficult. Also,
                     sellers can't put their product Globally for selling. So
-                    team bestbid has came with the vision to put your product
+                    team BidBlitz has came with the vision to put your product
                     globally for online bidding and get the best price
                   </h2>
                 </div>
