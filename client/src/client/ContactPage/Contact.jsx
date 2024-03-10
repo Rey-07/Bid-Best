@@ -85,7 +85,7 @@ const Contact = () => {
       <MetaData title="Contact Us"></MetaData>
       {/* <h1 id='contchead'> Contact Page</h1> */}
 
-      <div className="container-fluid nav_bg contactpge">
+      <div className="container-fluid nav_bg contactpge mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
             <section className="contact contacttextt">

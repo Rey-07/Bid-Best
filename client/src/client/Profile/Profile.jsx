@@ -14,9 +14,9 @@ const Profile = () => {
   /*USESTATE FOR -> RECIVE AN USER OBJECT AS "DATA" -> ASSIGN DYNAMICALLY TO THAT -> AFTER THAT TO CHANGE VALUE USE STATE USE*/
   const [userData, setUserData] = useState({});
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const [oldPassword, setOldPassword] = useState({});
   const [newPassword, setNewPassword] = useState({});
@@ -24,7 +24,6 @@ const Profile = () => {
 
   const callProfilePage = async () => {
     try {
-
       const res = await fetch("/getdata", {
         method: "GET",
         headers: {
@@ -199,9 +198,7 @@ const Profile = () => {
                             <div className="col-lg-3 col-md-4 label ">
                               Full Name
                             </div>
-                            <div className="col-lg-9 col-md-8">
-                              {/* {userData.name} */} Shrey
-                            </div>
+                            <div className="col-lg-9 col-md-8">Shreya</div>
                           </div>
 
                           <div className="row">
@@ -211,15 +208,13 @@ const Profile = () => {
 
                           <div className="row">
                             <div className="col-lg-3 col-md-4 label">Phone</div>
-                            <div className="col-lg-9 col-md-8">
-                              {userData.phone}
-                            </div>
+                            <div className="col-lg-9 col-md-8">8299302975</div>
                           </div>
 
                           <div className="row">
                             <div className="col-lg-3 col-md-4 label">Email</div>
                             <div className="col-lg-9 col-md-8">
-                              {userData.email}
+                              abcde07@gmail.com
                             </div>
                           </div>
                         </div>
