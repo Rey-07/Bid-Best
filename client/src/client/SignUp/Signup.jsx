@@ -202,7 +202,7 @@ const Signup = () => {
                     </div>
 
                     <div className="input-field">
-                      <i className="fas fa-envelope"></i>
+                      <i className="fas fa-phone"></i>
                       <input
                         type="tel"
                         name="phone"
@@ -231,7 +231,7 @@ const Signup = () => {
                       <input
                         type="password"
                         name="cpassword"
-                        placeholder="Conform Password"
+                        placeholder="Confirm Password"
                         autoComplete="off"
                         value={user.cpassword}
                         onChange={handleInputs}

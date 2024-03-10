@@ -54,7 +54,7 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="nav-item px-3 mx-auto licls">
+          {/* <li className="nav-item px-3 mx-auto licls">
             <NavLink
               activeClassName="menu_active"
               excat
@@ -63,11 +63,22 @@ const Navbar = () => {
             >
               About
             </NavLink>
-          </li>
+          </li> */}
           {/* 
         <li className="nav-item px-3 mx-auto licls ">
           <NavLink activeClassName = 'menu_active' excat className="nav-link" to="/service">Services</NavLink>
         </li> */}
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/bidstatus"
+            >
+              Bid Status
+            </NavLink>
+          </li>
 
           <li className="dropdown nav-item px-3 mx-auto licls">
             <NavLink to="#" className="nav-link">
@@ -86,7 +97,6 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-
           <li className="nav-item px-3 mx-auto licls">
             <NavLink
               activeClassName="menu_active"
@@ -110,16 +120,6 @@ const Navbar = () => {
             </ul>
           </li>
          */}
-          <li className="nav-item px-3 mx-auto licls">
-            <NavLink
-              activeClassName="menu_active"
-              excat
-              className="nav-link"
-              to="/bidstatus"
-            >
-              Bid Status
-            </NavLink>
-          </li>
 
           <li className="dropdown nav-item px-3 mx-auto licls">
             <NavLink to="#" className="nav-link">
@@ -238,7 +238,7 @@ const Navbar = () => {
               <div className="container-fluid">
                 <NavLink className="navbar-logo" to="/">
                   <RiAuctionFill />
-                  BestBid
+                  BidBlitz
                 </NavLink>
 
                 <button

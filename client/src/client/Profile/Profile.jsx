@@ -128,7 +128,7 @@ const Profile = () => {
 
   return (
     <>
-      <MetaData title="BEST BID"></MetaData>
+      <MetaData title="BidBlitz"></MetaData>
 
       {/* <h1>Hello World</h1> */}
 

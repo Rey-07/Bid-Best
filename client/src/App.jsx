@@ -13,7 +13,7 @@
 
 import React, { createContext, useReducer } from "react";
 import Home from "./client/HomePage/Home";
-import About from "./client/AboutPage/About";
+
 import Service from "./client/Services/Service";
 import Contact from "./client/ContactPage/Contact";
 import Feedback from "./client/Feedback/Feedback";
@@ -59,7 +59,7 @@ const Routing = () => {
       <Route exact path="/lot" component={Lot} />
       <Route path="/lot/:keyword" component={Lot} />
       <Route exact path="/bidstatus" component={BidStatus} />
-      <Route exact path="/about" component={About} />
+
       <Route exact path="/service" component={Service} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/feedback" component={Feedback} />
