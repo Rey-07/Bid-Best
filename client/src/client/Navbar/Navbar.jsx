@@ -11,7 +11,7 @@ const Navbar = () => {
     console.log(`state is ${state}`);
     if (state) {
       return (
-        <div>
+        <>
           {/* USER LOGGED IN  */}
 
           <li className="nav-item px-3 mx-auto licls">
@@ -19,135 +19,6 @@ const Navbar = () => {
               activeClassName="menu_active"
               excat
               className="nav-link "
-              to="/"
-            >
-              Home
-            </NavLink>
-          </li>
-
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">Lots</span>{" "}
-            </NavLink>
-            <ul className="ddlist">
-              <li>
-                <NavLink to="/addlot" excat className="nav-link">
-                  Add Lot
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/updatelot" excat className="nav-link">
-                  My Lots
-                </NavLink>
-              </li>
-            </ul>
-          </li>
-
-          <li className="nav-item px-3 mx-auto licls">
-            <NavLink
-              activeClassName="menu_active"
-              excat
-              className="nav-link"
-              to="/lot"
-            >
-              Bid & Buy
-            </NavLink>
-          </li>
-
-          {/* <li className="nav-item px-3 mx-auto licls">
-            <NavLink
-              activeClassName="menu_active"
-              excat
-              className="nav-link"
-              to="/about"
-            >
-              About
-            </NavLink>
-          </li> */}
-          {/* 
-        <li className="nav-item px-3 mx-auto licls ">
-          <NavLink activeClassName = 'menu_active' excat className="nav-link" to="/service">Services</NavLink>
-        </li> */}
-
-          <li className="nav-item px-3 mx-auto licls">
-            <NavLink
-              activeClassName="menu_active"
-              excat
-              className="nav-link"
-              to="/bidstatus"
-            >
-              Bid Status
-            </NavLink>
-          </li>
-
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">Services</span>{" "}
-            </NavLink>
-            <ul className="ddlist">
-              <li className="nav-item px-3 mx-auto licls ">
-                <NavLink excat className="nav-link" to="/service">
-                  Our Services
-                </NavLink>
-              </li>
-              <li className="nav-item px-3 mx-auto licls">
-                <NavLink excat className="nav-link fdbck" to="/feedback">
-                  Feedback
-                </NavLink>
-              </li>
-            </ul>
-          </li>
-          <li className="nav-item px-3 mx-auto licls">
-            <NavLink
-              activeClassName="menu_active"
-              excat
-              className="nav-link"
-              to="/contact"
-            >
-              Contact Us
-            </NavLink>
-          </li>
-
-          {/* <li className="dropdown nav-item px-3 mx-auto licls"><NavLink to="#" className="nav-link"><span id='headrdr'>Connect Us</span> </NavLink>
-            <ul className='ddlist'>
-            <li className="nav-item px-3 mx-auto licls">
-          <NavLink activeClassName = 'menu_active' excat className="nav-link fdbck" to="/contact">Contact Us</NavLink>
-        </li>
-        <li className="nav-item px-3 mx-auto licls">
-          <NavLink activeClassName = 'menu_active' excat className="nav-link fdbck" to="/feedback">Feedback</NavLink>
-        </li>
-              
-            </ul>
-          </li>
-         */}
-
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">My Profile</span>{" "}
-            </NavLink>
-            <ul className="ddlist">
-              <li>
-                <NavLink to="/profile" excat className="nav-link">
-                  User Profile
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/logout" excat className="nav-link">
-                  Logout
-                </NavLink>
-              </li>
-            </ul>
-          </li>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <li className="nav-item px-3 mx-auto licls">
-            <NavLink
-              activeClassName="menu_active"
-              excat
-              className="nav-link active"
               aria-current="page"
               to="/"
             >
@@ -189,9 +60,119 @@ const Navbar = () => {
               activeClassName="menu_active"
               excat
               className="nav-link"
-              to="/about"
+              to="/bidstatus"
             >
-              About
+              Bid Status
+            </NavLink>
+          </li>
+
+          {/* 
+        <li className="nav-item px-3 mx-auto licls ">
+          <NavLink activeClassName = 'menu_active' excat className="nav-link" to="/service">Services</NavLink>
+        </li> */}
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">Services</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li className="nav-item px-3 mx-auto licls ">
+                <NavLink excat className="nav-link" to="/service">
+                  Our Services
+                </NavLink>
+              </li>
+              <li className="nav-item px-3 mx-auto licls">
+                <NavLink excat className="nav-link fdbck" to="/feedback">
+                  Feedback
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/contact"
+            >
+              Contact Us
+            </NavLink>
+          </li>
+
+          {/* <li className="dropdown nav-item px-3 mx-auto licls"><NavLink to="#" className="nav-link"><span id='headrdr'>Connect Us</span> </NavLink>
+            <ul className='ddlist'>
+            <li className="nav-item px-3 mx-auto licls">
+          <NavLink activeClassName = 'menu_active' excat className="nav-link fdbck" to="/contact">Contact Us</NavLink>
+        </li>
+        <li className="nav-item px-3 mx-auto licls">
+          <NavLink activeClassName = 'menu_active' excat className="nav-link fdbck" to="/feedback">Feedback</NavLink>
+        </li>
+              
+            </ul>
+          </li>
+         */}
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">My Profile</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li>
+                <NavLink to="/profile" excat className="nav-link">
+                  User Profile
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/logout" excat className="nav-link">
+                  Logout
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link active"
+              aria-current="page"
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">Lots</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li>
+                <NavLink to="/addlot" excat className="nav-link">
+                  Add Lot
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/updatelot" excat className="nav-link">
+                  My Lots
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/lot"
+            >
+              Bid & Buy
             </NavLink>
           </li>
 
@@ -224,12 +205,12 @@ const Navbar = () => {
               </NavLink>
             </div>
           </li>
-        </div>
+        </>
       );
     }
   };
 
-   return (
+  return (
     <>
       <div className="container-fluid nav_bg navbarpg">
         <div className="row">
@@ -238,7 +219,7 @@ const Navbar = () => {
               <div className="container-fluid">
                 <NavLink className="navbar-logo" to="/">
                   <RiAuctionFill />
-                  BidBlitz
+                  BestBid
                 </NavLink>
 
                 <button
@@ -276,7 +257,7 @@ const Navbar = () => {
         </div>
       </div>
     </>
-  ); 
+  );
 };
 
 export default Navbar;
