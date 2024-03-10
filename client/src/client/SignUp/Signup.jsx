@@ -45,7 +45,11 @@ const Signup = () => {
     const res = await fetch("/register", {
       method: "POST",
       headers: {
+<<<<<<< HEAD
         "Content-Type": "application/json",
+=======
+        "Content-type": "application/json",
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
       },
       body: JSON.stringify({
         name,
@@ -64,9 +68,9 @@ const Signup = () => {
       console.log(data);
     } else {
       // window.alert("Regestration Successful");
-      alert.success("Regestration Successful");
+      alert.success("Registration Successful");
 
-      console.log("Regestration Successful");
+      console.log("Registration Successful");
 
       setFlag(!flag);
     }
@@ -87,7 +91,11 @@ const Signup = () => {
     const res = await fetch("/signin", {
       method: "POST",
       headers: {
+<<<<<<< HEAD
         "Content-Type": "application/json",
+=======
+        "Content-type": "application/json",
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
       },
       body: JSON.stringify({
         email,
@@ -96,7 +104,10 @@ const Signup = () => {
     });
 
     const data = res.json();
+<<<<<<< HEAD
     console.log(data);
+=======
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
 
     if (res.status === 400 || !data) {
       // window.alert("Invalid Credential");
@@ -113,7 +124,15 @@ const Signup = () => {
   return (
     <>
       {/* <h1>Signup Page</h1> */}
+<<<<<<< HEAD
       <div className=" signupcls" data-aos="fade-up" data-aos-delay="400">
+=======
+      <div
+        className=" signupcls pb-5 pt-3"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
         <div className="row">
           <div className="col-10 mx-auto">
             {/* Sign in */}
@@ -199,7 +218,11 @@ const Signup = () => {
                     </div>
 
                     <div className="input-field">
+<<<<<<< HEAD
                       <i className="fas fa-envelope"></i>
+=======
+                      <i className="fas fa-phone"></i>
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
                       <input
                         type="tel"
                         name="phone"
@@ -228,7 +251,11 @@ const Signup = () => {
                       <input
                         type="password"
                         name="cpassword"
+<<<<<<< HEAD
                         placeholder="Conform Password"
+=======
+                        placeholder="Confirm Password"
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
                         autoComplete="off"
                         value={user.cpassword}
                         onChange={handleInputs}

@@ -47,7 +47,7 @@ const Home = () => {
         <Loader />
       ) : (
         <>
-          <MetaData title="BEST BID"></MetaData>
+          <MetaData title="BidBlitz"></MetaData>
           <section id="header" className="d-flex align-items-center homepg">
             <div className="container-fluid nav_bg">
               <div className="row">
@@ -80,13 +80,13 @@ const Home = () => {
                     </div>
 
                     <div
-                      className="col-lg-6 order-1 order-lg-2 header-img "
+                      className="col-lg-6 order-1 order-lg-2 header-img pt-5 mt-2 md:pt-0 "
                       data-aos="fade-up"
                       data-aos-delay="400"
                     >
                       <img
                         src={Auction1}
-                        className="img-fluid animated hedrimg"
+                        className="img-fluid hedrimg"
                         alt="auction img"
                       />
                     </div>
@@ -98,7 +98,7 @@ const Home = () => {
 
           {/* Home Section 2 */}
 
-          <div className="container-fluid nav_bg sectiontwocls">
+          <div className="container-fluid nav_bg sectiontwocls mt-5 pt-5 md:mt-0 md:pt-3">
             <div className="row">
               <div className="col-10 mx-auto">
                 <section className="section">
@@ -178,7 +178,7 @@ const Home = () => {
 
                 {/* Home Section 3 */}
 
-                <section className="section secthreecls">
+                <section className="section secthreecls ">
                   <div className="container">
                     <div
                       className="row justify-content-center text-center mb-5 homeimgcls"
@@ -232,14 +232,14 @@ const Home = () => {
                         >
                           <span className="number">03</span>
                           <h3>Enjoy the app</h3>
-                          <p>Sell and Buy Products with Best Bid</p>
+                          <p>Sell and Buy Products with BidBlitz</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </section>
 
-                <section className="section secfourcls">
+                <section className="section secfourcls mt-4">
                   <div className="container">
                     <div className="row align-items-center crtlot">
                       <div

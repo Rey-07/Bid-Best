@@ -130,7 +130,7 @@ const Profile = () => {
 
   return (
     <>
-      <MetaData title="BEST BID"></MetaData>
+      <MetaData title="BidBlitz"></MetaData>
 
       {/* <h1>Hello World</h1> */}
 
@@ -147,7 +147,8 @@ const Profile = () => {
                         alt="Profile"
                         className="rounded-circle"
                       />
-                      {console.log(userData)};<h2>{userData.name}</h2>
+                      {console.log(userData)}
+                      <h2>{userData.name}</h2>
                       <h3>User</h3>
                     </div>
                   </div>
@@ -234,8 +235,12 @@ const Profile = () => {
                             >
                               Profile Image
                             </label>
-                            <div className="col-md-8 col-lg-9">
-                              <img src={ProfileImg} alt="Profile" />
+                            <div className="col-md-8 col-lg-9 ">
+                              <img
+                                src={ProfileImg}
+                                alt="Profile"
+                                className="pr-2"
+                              />
                               <div className="pt-2">
                                 <a
                                   href="#"

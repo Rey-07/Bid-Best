@@ -55,17 +55,17 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-3 col-md-6 footer-contact">
-                <h3>Bestbid</h3>
+                <h3>BidBlitz</h3>
                 <p>
-                  Dharmsinh Desai University
+                  IIT Bhubaneswar
                   <br />
-                  Nadiad, College Rd
+                  Argul, Jatani
                   <br />
-                  Gujarat 387001 <br />
+                  Khurdha 752050 <br />
                   <br />
-                  <strong>Phone:</strong>+91 8980452333
+                  <strong>Phone:</strong>+91 7839284478
                   <br />
-                  <strong>Email:</strong> nihalparmar@gmail.com
+                  <strong>Email:</strong> bidblitz@iitbbs.ac.in
                   <br />
                 </p>
               </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                   {/* <li><NavLink to="/addlot" excat className="nav-link">Add Lot</NavLink></li> */}
                   <li>
                     <AiOutlineRight />{" "}
-                    <NavLink to="/" excat className="nav-link">
+                    <NavLink to="/about" excat className="nav-link">
                       About us
                     </NavLink>
                   </li>
@@ -121,7 +121,7 @@ const Footer = () => {
 
               <div className="col-lg-3 col-md-6 footer-links">
                 <h4>Stay Connected</h4>
-                <p>Best Bid Blogs</p>
+                <p>BidBlitz Blogs</p>
                 <div className="social-links mt-3">
                   {/* <NavLink to="https://twitter.com/RiyaPar18563538?t=XzT0mte2elxP7XWMUQSD7w&s=08" excat className="nav-link twitter"><FiTwitter/></NavLink>
         <NavLink to="/contact" excat className="nav-link twitter"><AiFillLinkedin/></NavLink>
@@ -163,7 +163,7 @@ const Footer = () => {
           <div className="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>Bestbid</span>
+              <span>BidBlitz</span>
             </strong>
             . All Rights Reserved
           </div>

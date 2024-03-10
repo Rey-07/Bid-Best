@@ -85,7 +85,11 @@ const Contact = () => {
       <MetaData title="Contact Us"></MetaData>
       {/* <h1 id='contchead'> Contact Page</h1> */}
 
+<<<<<<< HEAD
       <div className="container-fluid nav_bg contactpge">
+=======
+      <div className="container-fluid nav_bg contactpge mb-5 pb-3">
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
         <div className="row">
           <div className="col-10 mx-auto">
             <section className="contact contacttextt">
@@ -125,7 +129,11 @@ const Contact = () => {
                       </div>
                       <div className="text">
                         <h3>Address</h3>
+<<<<<<< HEAD
                         <p>9999 DDU, College Road, Nadiad, Gujarat 387002</p>
+=======
+                        <p>IIT Bhubaneswar, Jatani, Bhubaneswar, Odisha</p>
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
                       </div>
                     </div>
                     {/* <h1>xwxw</h1> */}
@@ -142,7 +150,7 @@ const Contact = () => {
                       </div>
                       <div className="text">
                         <h3>Phone</h3>
-                        <p>1234567890</p>
+                        <p>7839284478</p>
                       </div>
                     </div>
                   </div>
@@ -157,13 +165,17 @@ const Contact = () => {
                       </div>
                       <div className="text">
                         <h3>Email</h3>
-                        <p>bestbid@gmial.com</p>
+                        <p>bidblitz@iitbbs.ac.in</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
+<<<<<<< HEAD
                 <div className="contactForm col-xl-6">
+=======
+                <div className="contactForm col-xl-4">
+>>>>>>> b2c1b03212939e3e6a88ab6d07d752d4a884f53f
                   {/* Contact Form Here */}
 
                   <div className="card p-4">
