@@ -13,6 +13,7 @@ const Navbar = () => {
       return (
         <>
           {/* USER LOGGED IN  */}
+<<<<<<< HEAD
 
           <li className="nav-item px-3 mx-auto licls">
             <NavLink
@@ -242,6 +243,220 @@ const Navbar = () => {
                   BestBid
                 </NavLink>
 
+=======
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">Lots</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li>
+                <NavLink to="/addlot" excat className="nav-link">
+                  Add Lot
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/updatelot" excat className="nav-link">
+                  My Lots
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/lot"
+            >
+              Bid & Buy
+            </NavLink>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/about"
+            >
+              About
+            </NavLink>
+          </li>
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">Services</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li className="nav-item px-3 mx-auto licls ">
+                <NavLink excat className="nav-link" to="/service">
+                  Our Services
+                </NavLink>
+              </li>
+              <li className="nav-item px-3 mx-auto licls">
+                <NavLink excat className="nav-link fdbck" to="/feedback">
+                  Feedback
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/contact"
+            >
+              Contact Us
+            </NavLink>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/bidstatus"
+            >
+              Bid Status
+            </NavLink>
+          </li>
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">My Profile</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li>
+                <NavLink to="/profile" excat className="nav-link">
+                  User Profile
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/logout" excat className="nav-link">
+                  Logout
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              aria-current="page"
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+
+          <li className="dropdown nav-item px-3 mx-auto licls">
+            <NavLink to="#" className="nav-link">
+              <span id="headrdr">Lots</span>{" "}
+            </NavLink>
+            <ul className="ddlist">
+              <li>
+                <NavLink to="/addlot" excat className="nav-link">
+                  Add Lot
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/updatelot" excat className="nav-link">
+                  My Lots
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/lot"
+            >
+              Bid & Buy
+            </NavLink>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/about"
+            >
+              About
+            </NavLink>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls ">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/service"
+            >
+              Services
+            </NavLink>
+          </li>
+
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/contact"
+            >
+              Contact Us
+            </NavLink>
+          </li>
+
+          <li className="nav-item px-5 mx-auto ">
+            <div className="signupbtn">
+              <NavLink to="/signup" className="btn-get-started" id="bt1">
+                Sign Up
+              </NavLink>
+            </div>
+          </li>
+        </>
+      );
+    }
+  };
+
+  return (
+    <>
+      <div className="container-fluid nav_bg navbarpg">
+        <div className="row">
+          <div className="col-10 mx-auto">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <div className="container-fluid">
+                <NavLink className="navbar-logo" to="/">
+                  <RiAuctionFill />
+                  BestBid
+                </NavLink>
+
+>>>>>>> dba012932dfca069b3073f01fcd9b2c325bb7d91
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -259,6 +474,7 @@ const Navbar = () => {
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
+<<<<<<< HEAD
                     {/* Home */}
                     {/* // Home - Done
 // Add Lot
@@ -268,6 +484,9 @@ const Navbar = () => {
 // Contact Us - Done */}
                     {/* SignUp */}
 
+=======
+                    {/* SignUp */}
+>>>>>>> dba012932dfca069b3073f01fcd9b2c325bb7d91
                     <RenderMenu />
                   </ul>
                 </div>
