@@ -10,6 +10,7 @@ Responsive design for mobile and desktop devices
 Search functionality to find items by name or category
 User dashboard to manage bids and items
 Contact and user feedback/review  system
+
 # Technologies Used
 MongoDB: Database to store item and user information
 Express.js: Backend framework for handling HTTP requests and routing
