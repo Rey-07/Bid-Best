@@ -74,7 +74,7 @@ const Profile = () => {
     const res = await fetch("/me/update", {
       method: "PUT",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name,
@@ -109,7 +109,7 @@ const Profile = () => {
     const res = await fetch("/password/update", {
       method: "PUT",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         oldPassword,

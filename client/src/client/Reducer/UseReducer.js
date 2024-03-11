@@ -6,7 +6,7 @@ const callProfilePage = async () => {
       method: "GET",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json",
+        "Content-type": "application/json",
       },
       credentials: "include",
     });

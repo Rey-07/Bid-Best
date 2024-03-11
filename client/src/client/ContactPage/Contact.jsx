@@ -19,7 +19,7 @@ const Contact = () => {
       const res = await fetch("/getdata", {
         method: "GET",
         headers: {
-          "Content-Type": "application/json",
+          "Content-type": "application/json",
         },
       });
       const data = await res.json();
@@ -58,7 +58,7 @@ const Contact = () => {
     const res = await fetch("/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-type": "application/json",
       },
       body: JSON.stringify({
         name,

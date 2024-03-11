@@ -45,7 +45,7 @@ const Signup = () => {
     const res = await fetch("/register", {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name,
@@ -87,7 +87,7 @@ const Signup = () => {
     const res = await fetch("/signin", {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         email,

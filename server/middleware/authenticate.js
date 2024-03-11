@@ -1,43 +1,43 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/userSchema");
-// const { response } = require("express");
-
-/*THIS FILE IS FOR AUTHENTICATION TOKE VERIFICATION -> AT ANI TIME USER ID MUSTR BE VERIFY WITH CURRENT TOKE  ID THEN ONLY WE CAN RETRAIN INFORMATION FROM CURRRENT USER ID*/
 
 const authenticate = async (req, res, next) => {
   try {
-    // HERE WE GET CURRENT TOKEN FROM JWT TOKEN
+    // Retrieve token from request cookies
     const token = req.cookies.jwtoken;
-    // console.log("sdsdsd");
 
-    // TO VERIFY TOKEN -> verify() FUNCTION CALLED INSIDE JWT
+    if (!token) {
+      throw new Error("Authentication token missing");
+    }
+
+    // Verify token
     const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
 
-    // HERE WE GOT ALL INFORMATION ABOUT CURRENT USER INSIDE rootUser
+    if (!verifyToken) {
+      throw new Error("Token verification failed");
+    }
+
+    // Find user based on token information
     const rootUser = await User.findOne({
       _id: verifyToken._id,
       "tokens.token": token,
     });
-    // For test
 
     if (!rootUser) {
-      throw new Error("User Not Found");
+      throw new Error("User not found");
     }
 
-    // TO USE THAT CURRRENT USER INFORMATION INSIDE THE PROFILE PAGE WE ARE STORING IT
-    // ALL DATAV STORES IN req.rootUser
-    console.log(`start root usr`);
-    console.log(rootUser);
-    console.log(`end root usr`);
+    // Store user information in request object
     req.token = token;
     req.rootUser = rootUser;
     req.userID = rootUser._id;
 
-    // NEXT FUNCTION CALLED AFTER MIDDLEWARE
+    // Call next middleware
     next();
-  } catch (err) {
-    console.log('error mil gyi');
-    res.status(401).send.json({message:"Aree yarr"});
+  } catch (error) {
+    // Handle errors
+    console.error("Authentication error:", error.message);
+    res.status(401).json({ message: "Authentication failed" });
   }
 };
 
